@@ -315,6 +315,43 @@ body {
   padding-top: 12px;
 }
 
+/* ===== Photo Section ===== */
+.photo-section {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.photo-title {
+  font-family: 'Pacifico', cursive;
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  color: var(--dark);
+  margin-bottom: 28px;
+}
+
+.photo-frame {
+  display: inline-block;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 16px 56px rgba(255, 107, 53, 0.25), 0 4px 16px rgba(0,0,0,0.12);
+  border: 5px solid #fff;
+  outline: 3px solid var(--orange);
+  max-width: 480px;
+  width: 100%;
+  transform: rotate(-1.5deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-frame:hover {
+  transform: rotate(0deg) scale(1.02);
+  box-shadow: 0 24px 72px rgba(255, 107, 53, 0.32), 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.hero-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ===== Footer ===== */
 .footer {
   position: relative;
@@ -324,6 +361,13 @@ body {
   color: #aaa;
   font-size: 0.9rem;
   font-weight: 600;
+}
+
+.footer-artie {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: #ccc;
+  font-style: italic;
 }
 
 /* ===== Responsive ===== */
