@@ -205,15 +205,7 @@ function LogisticsSection() {
           <h3 className="font-display text-2xl text-emerald-800 mb-2">Děti & Hry</h3>
           <p className="text-xl font-bold text-slate-700">Děti jsou vítány!</p>
           <p className="mt-2 text-slate-600">Zahrada je velká, ale na vlastní nebezpečí :D</p>
-          <div className="mt-4 p-4 bg-white/50 rounded-2xl border border-emerald-200 text-sm text-slate-700">
-            <p className="font-bold mb-1">Venkovní zábava:</p>
-            <ul className="list-disc list-inside text-left">
-              <li>Badminton, Pickleball</li>
-              <li>Kubb, Mölkky</li>
-              <li>Slackline, Frisbee</li>
-              <li>Bazén / bazének pro děti</li>
-            </ul>
-          </div>
+
         </motion.div>
       </div>
     </section>
@@ -244,7 +236,7 @@ function ProgramSection() {
           <ProgramItem 
             icon={<PartyPopper size={32} />}
             title="Chill & Zábava"
-            desc="Zahradní pohoda, hudba a spousta venkovních her! Máme připravený badminton, kubb, mölkky, slackline, pickleball i frisbee. Hlavně žádný stres."
+            desc="Zahradní pohoda, hudba a spousta venkovních her! Máme připravený badminton, kubb, mölkky, slackline, spikeball i frisbee. Hlavně žádný stres."
             color="bg-purple-100 text-purple-600 border-purple-200"
           />
         </div>
