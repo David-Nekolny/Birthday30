@@ -203,8 +203,7 @@ function LogisticsSection() {
             <Gamepad2 size={30} />
           </div>
           <h3 className="font-display text-2xl text-emerald-800 mb-2">Děti & Hry</h3>
-          <p className="text-xl font-bold text-slate-700">Děti jsou vítány!</p>
-          <p className="mt-2 text-slate-600">Zahrada je velká, ale na vlastní nebezpečí :D</p>
+          <p className="mt-2 text-slate-600">Děti jsou vítány! Zahrada je dost velká na řádění — jen ať si dají pozor na gril. 😄</p>
 
         </motion.div>
       </div>
