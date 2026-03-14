@@ -232,7 +232,7 @@ function ProgramSection() {
           <ProgramItem 
             icon={<Utensils size={32} />}
             title="Gastro zážitek"
-            desc="Gril pojede na plné obrátky. Maso, sýry, zelenina a možná i něco, co jsme našli v mrazáku (nebojte, děláme si srandu... nebo ne?)."
+            desc="Gril pojede na plné obrátky. Maso, sýry a zelenina — zkrátka všechno, co na správnou letní grilovačku patří."
             color="bg-red-100 text-red-600 border-red-200"
           />
           <ProgramItem 
