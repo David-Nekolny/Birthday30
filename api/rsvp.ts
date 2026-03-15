@@ -18,11 +18,28 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
-    const response = await fetch(scriptUrl, {
+    const body = JSON.stringify({ name, count, note });
+
+    // Google Apps Script redirects POST requests (302). If we follow the redirect
+    // with fetch's default behaviour it converts POST → GET → 405.
+    // Fix: follow the redirect manually, keeping the POST method.
+    let response = await fetch(scriptUrl, {
       method: "POST",
+      redirect: "manual",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, count, note }),
+      body,
     });
+
+    if (response.status >= 300 && response.status < 400) {
+      const redirectUrl = response.headers.get("location");
+      if (redirectUrl) {
+        response = await fetch(redirectUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body,
+        });
+      }
+    }
 
     const responseText = await response.text();
 
