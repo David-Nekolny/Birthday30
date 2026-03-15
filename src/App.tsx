@@ -1,6 +1,7 @@
 import { useState, useEffect, ReactNode, FormEvent } from 'react';
 import { motion } from 'motion/react';
 import { MapPin, Calendar, Clock, Beer, Utensils, Gift, PartyPopper, Check, Gamepad2, Baby } from 'lucide-react';
+import { AddToCalendarButton } from 'add-to-calendar-button-react';
 
 export default function App() {
   return (
@@ -171,6 +172,22 @@ function LogisticsSection() {
             <span>Start ve 14:00</span>
           </div>
           <p className="mt-4 text-sm text-slate-500 italic">Přijďte včas, ať nepropásnete úvodní proslov (který nebude).</p>
+          <div className="mt-6">
+            <AddToCalendarButton
+              name="David & Vítek 3.0 Party 🎉"
+              startDate="2026-06-27"
+              startTime="14:00"
+              endTime="22:00"
+              timeZone="Europe/Prague"
+              location="Rybníky 50, 263 01"
+              description="Oslava 30. narozenin Davida a Vítka — letní grilovačka. Přijďte s dobrou náladou!"
+              options={['Google', 'Apple', 'iCal', 'Outlook.com', 'Yahoo']}
+              label="Přidat do kalendáře"
+              buttonStyle="round"
+              size="4"
+              lightMode="light"
+            />
+          </div>
         </motion.div>
 
         <motion.div 
