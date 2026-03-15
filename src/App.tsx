@@ -335,7 +335,7 @@ function RsvpSection() {
             <p className="mb-6">Těšíme se, {name}!</p>
             
             <a 
-              href={`https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent("David & Vítek 3.0 Party")}&details=${encodeURIComponent("Oslava 30. narozenin Davida a Vítka. Přijďte včas, bude to legendární!")}&location=${encodeURIComponent("Rybníky 50, 263 01")}&dates=20260627T120000Z/20260628T020000Z`}
+              href={`https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent("David & Vítek 3.0 Party")}&details=${encodeURIComponent("Oslava 30. narozenin Davida a Vítka. Přijďte včas, bude to legendární!")}&location=${encodeURIComponent("Rybníky 50, 263 01")}&dates=20260627T120000Z/20260627T200000Z`}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 bg-white text-green-600 font-bold py-3 px-6 rounded-xl hover:bg-green-50 transition-colors shadow-md"
