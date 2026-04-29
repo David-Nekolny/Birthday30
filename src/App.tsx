@@ -90,7 +90,7 @@ function HeroSection() {
           transition={{ delay: 0.6 }}
           className="mt-6 text-lg md:text-xl text-emerald-50 max-w-2xl mx-auto leading-relaxed"
         >
-          Beta testování ukončeno. Verze 3.0 je konečně stabilní a připravený na zátěžový test.
+          Beta testování ukončeno. Verze 3.0 je konečně stabilní a připravená na zátěžový test.
         </motion.div>
       </div>
 
